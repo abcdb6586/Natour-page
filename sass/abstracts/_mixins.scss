@@ -1,0 +1,70 @@
+@mixin clearfix {
+  &::after {
+    content: '';
+    clear: both;
+    display: table;
+  }
+}
+
+@mixin moveToCenter {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+//MEDIA QUERY MANAGER
+/*
+0-600px :        PHONE
+600-900px:       Tablet portrait(直式平板)
+900-1200px:      Tablet landscape(橫式平板)
+[1200 - 1800px]: normal styles apply
+1800px + :       Big desktop
+*/
+/* 
+//  @mixin respond-phone {
+//   @media (max-width: 600px) {
+//     @content; //寫入@content的內容會被sass直接帶入有使用 respond-phone的 css component裡面
+//   }
+// }
+*/
+/*
+$breakpoint argument choices:
+- phone 
+- tab-port
+- tab-land
+- big-desktop
+*/
+
+/* media query中的螢幕解析單位不會受到 root level自行設定的rem大小影響，
+例如預設字型大小為16px，則若在media query使用rem時就是預設 16px，因此應該使用 em 
+1em = 16px 
+順序: Base + typography > general layout + grid > page layout > components 
+*/
+
+@mixin respond($breakpoint) {
+  @if $breakpoint == phone {
+    @media only screen and (max-width: 37.5em) {
+      //600px
+      @content; //寫入@content的內容會被sass直接帶入有使用 respond-phone的 css component裡面
+    }
+  }
+  @if $breakpoint == tab-port {
+    @media only screen and (max-width: 56.25em) {
+      //900px
+      @content;
+    }
+  }
+  @if $breakpoint == tab-land {
+    @media only screen and (max-width: 75em) {
+      //1200px
+      @content;
+    }
+  }
+  @if $breakpoint == big-desktop {
+    @media only screen and (min-width: 112.5em) {
+      //1800px
+      @content;
+    }
+  }
+}

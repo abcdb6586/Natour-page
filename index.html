@@ -1,0 +1,555 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500;700;900&family=Noto+Serif+TC:wght@200;300;400;500;600;700;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- <link rel="stylesheet" href="css/icon-font.css" /> -->
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="shortcut icon" type="image/png" href="img/favicon.png" />
+
+    <title>Natours | Exciting tours for adventurous people</title>
+  </head>
+  <body>
+    <div class="navigation">
+      <input type="checkbox" class="navigation__checkbox" id="navi-toggle" />
+      <label for="navi-toggle" class="navigation__button">
+        <span class="navigation__icon">&nbsp;</span>
+      </label>
+
+      <div class="navigation__background">&nbsp;</div>
+      <nav class="navigation__nav">
+        <ul class="navigation__list">
+          <li class="navigation__item">
+            <a href="#" class="navigation__link"
+              ><span>01</span>About Natours</a
+            >
+          </li>
+          <li class="navigation__item">
+            <a href="#" class="navigation__link"
+              ><span>02</span>Your benefits</a
+            >
+          </li>
+          <li class="navigation__item">
+            <a href="#" class="navigation__link"
+              ><span>03</span>Popular tours</a
+            >
+          </li>
+          <li class="navigation__item">
+            <a href="#" class="navigation__link"><span>04</span>Stories</a>
+          </li>
+          <li class="navigation__item">
+            <a href="#" class="navigation__link"><span>05</span>Book now</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+
+    <header class="header">
+      <div class="header__logo-box">
+        <img src="img/logo-white.png" alt="Logo" class="header__logo" />
+        <!-- alt屬性除了在圖片破損可以描述，也是為了SEO -->
+      </div>
+      <div class="header__text-box">
+        <h1 class="heading-primary">
+          <span class="heading-primary--main">outdoors</span>
+          <span class="heading-primary--sub">is where life happens</span>
+        </h1>
+        <a href="#" class="btn btn--white btn--animated">開始探索旅程</a>
+      </div>
+    </header>
+
+    <main>
+      <section class="section-about">
+        <div class="u-center-text u-margin-bottom-big">
+          <h2 class="heading-secondary">你的精彩旅程</h2>
+        </div>
+
+        <div class="row">
+          <div class="col-1-of-2">
+            <h3 class="heading-tertiary u-margin-bottom-small">
+              你肯定會愛上大自然！
+            </h3>
+            <p class="paragraph">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+              Consectetur soluta neque hic ipsa! Voluptate ex accusantium
+              aspernatur vitae nihil sed maxime sapiente ut corporis.
+            </p>
+
+            <h3 class="heading-tertiary u-margin-bottom-small">
+              像第一次沐浴在大自然裡那樣享受大自然吧！
+            </h3>
+            <p class="paragraph">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quo hic
+              nobis, architecto atque porro consectetur sint optio, voluptatum
+              ad perspiciatis corporis impedit officia recusandae.
+            </p>
+
+            <a href="#" class="btn-text">Learn more &rarr;</a>
+          </div>
+          <div class="col-1-of-2">
+            <div class="composition">
+              <img
+                srcset="img/nat-1.jpg 300w, img/nat-1-large.jpg 1000w"
+                sizes="(max-width:56.25em) 20vw,(max-width:37.5em) 30vw, 300px"
+                src="img/nat-1-large.jpg"
+                alt="Photo 1"
+                class="composition__photo composition__photo--p1"
+              />
+              <!-- srcset 先告訴瀏覽器特定w以下要選擇的圖片，sizes告訴瀏覽器在特定瀏覽器寬度下照片應該要多寬，
+                最後一個數字是預設，src還是要寫以預防都不支援的情況 -->
+              <!-- srcset 的寬度 (w) 的算法是：寬度 = 圖片寬度 (pixel) * Pixel Density，
+                預設圖片寬度 = 100% 的 viewport 寬度。 -->
+              <img
+                srcset="img/nat-2.jpg 300w, img/nat-2-large.jpg 1000w"
+                sizes="(max-width:56.25em) 20vw,(max-width:37.5em) 30vw, 300px"
+                src="img/nat-2-large.jpg"
+                alt="Photo 2"
+                class="composition__photo composition__photo--p2"
+              />
+              <img
+                srcset="img/nat-3.jpg 300w, img/nat-3-large.jpg 1000w"
+                sizes="(max-width:56.25em) 20vw,(max-width:37.5em) 30vw, 300px"
+                src="img/nat-3-large.jpg"
+                alt="Photo 3"
+                class="composition__photo composition__photo--p3"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-features">
+        <div class="row">
+          <div class="col-1-of-4">
+            <div class="feature-box">
+              <i class="feature-box__icon icon-basic-world"></i>
+              <h3 class="heading-tertiary u-margin-bottom-small">
+                Explore the world
+              </h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quo
+                hic nobis, architecto atque porro.
+              </p>
+            </div>
+          </div>
+
+          <div class="col-1-of-4">
+            <div class="feature-box">
+              <i class="feature-box__icon icon-basic-compass"></i>
+              <h3 class="heading-tertiary u-margin-bottom-small">
+                Meet nature
+              </h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quo
+                hic nobis, architecto atque porro.
+              </p>
+            </div>
+          </div>
+
+          <div class="col-1-of-4">
+            <div class="feature-box">
+              <i class="feature-box__icon icon-basic-map"></i>
+              <h3 class="heading-tertiary u-margin-bottom-small">
+                Find your way
+              </h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quo
+                hic nobis, architecto atque porro.
+              </p>
+            </div>
+          </div>
+
+          <div class="col-1-of-4">
+            <div class="feature-box">
+              <i class="feature-box__icon icon-basic-heart"></i>
+              <h3 class="heading-tertiary u-margin-bottom-small">
+                Live a healthier life
+              </h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quo
+                hic nobis, architecto atque porro.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-tours" id="section-tours">
+        <div class="u-center-text u-margin-bottom-big">
+          <h2 class="heading-secondary">最受歡迎的旅行組合！</h2>
+        </div>
+
+        <div class="row">
+          <div class="col-1-of-3">
+            <div class="card">
+              <div class="card__side card__side--front">
+                <div class="card__picture card__picture--1">&nbsp;</div>
+                <h4 class="card__heading">
+                  <span class="card__heading-span card__heading-span--1"
+                    >探索海洋之旅</span
+                  >
+                </h4>
+                <div class="card__details">
+                  <ul>
+                    <li>三天兩夜</li>
+                    <li>最多 30 位旅客</li>
+                    <li>兩位導遊</li>
+                    <li>舒適的旅店</li>
+                    <li>難易度：容易</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="card__side card__side--back card__side--back-1">
+                <div class="card__cta">
+                  <div class="card__price-box">
+                    <p class="card__price-only">只要</p>
+                    <p class="card__price-value">$7,500</p>
+                  </div>
+                  <a href="#popup" class="btn btn--white">馬上預訂</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-1-of-3">
+            <div class="card">
+              <div class="card__side card__side--front">
+                <div class="card__picture card__picture--2">&nbsp;</div>
+                <h4 class="card__heading">
+                  <span class="card__heading-span card__heading-span--2"
+                    >探索森林奧秘之旅</span
+                  >
+                </h4>
+                <div class="card__details">
+                  <ul>
+                    <li>七天六夜</li>
+                    <li>最多 40 位旅客</li>
+                    <li>六位導遊</li>
+                    <li>露宿搭帳在野外</li>
+                    <li>難易度：中等</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="card__side card__side--back card__side--back-2">
+                <div class="card__cta">
+                  <div class="card__price-box">
+                    <p class="card__price-only">只要</p>
+                    <p class="card__price-value">$10,500</p>
+                  </div>
+                  <a href="#popup" class="btn btn--white">馬上預訂</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-1-of-3">
+            <div class="card">
+              <div class="card__side card__side--front">
+                <div class="card__picture card__picture--3">&nbsp;</div>
+                <h4 class="card__heading">
+                  <span class="card__heading-span card__heading-span--3"
+                    >雪地冒險之旅</span
+                  >
+                </h4>
+                <div class="card__details">
+                  <ul>
+                    <li>五天四夜</li>
+                    <li>最多 15 位旅客</li>
+                    <li>三位導遊</li>
+                    <li>露宿搭帳在野外</li>
+                    <li>難易度：困難</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="card__side card__side--back card__side--back-3">
+                <div class="card__cta">
+                  <div class="card__price-box">
+                    <p class="card__price-only">只要</p>
+                    <p class="card__price-value">$13,500</p>
+                  </div>
+                  <a href="#popup" class="btn btn--white">馬上預訂</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="u-center-text u-margin-top-big">
+          <a href="#" class="btn btn--green">查看更多方案 &rarr;</a>
+        </div>
+      </section>
+
+      <section class="section-stories">
+        <div class="bg-video">
+          <video class="bg-video__content" autoplay muted loop>
+            <source src="img/video.mp4" type="video/mp4" />
+            <source src="img/video.webm" type="video/webm" />
+            Your browser is not supported!
+          </video>
+        </div>
+        <div class="u-center-text u-margin-bottom-big">
+          <h2 class="heading-secondary">我們致力於讓大家都開心！</h2>
+        </div>
+
+        <div class="row">
+          <div class="story">
+            <figure class="story__shape">
+              <img
+                src="img/nat-8.jpg"
+                alt="Person on a tour"
+                class="story__img"
+              />
+              <figcaption class="story__caption">Mary Scott</figcaption>
+            </figure>
+            <div class="story__text">
+              <h3 class="heading-tertiary u-margin-bottom-small">
+                我跟家人共度了最棒的一週！
+              </h3>
+              <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsa
+                necessitatibus dicta cum ullam totam a dolorum ducimus, delectus
+                velit nihil optio, ut earum. Ab, neque laudantium! Praesentium
+                incidunt sequi nihil?Lorem ipsum dolor sit, amet consectetur
+                adipisicing elit. Ipsa necessitatibus dicta cum ullam totam a
+                dolorum ducimus, delectus velit nihil optio, ut earum. Ab, neque
+                laudantium! Praesentium incidunt sequi nihil?
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="story">
+            <figure class="story__shape">
+              <img
+                src="img/nat-9.jpg"
+                alt="Person on a tour"
+                class="story__img"
+              />
+              <figcaption class="story__caption">Jack Wilson</figcaption>
+            </figure>
+            <div class="story__text">
+              <h3 class="heading-tertiary u-margin-bottom-small">
+                我的人生從此不同了！
+              </h3>
+              <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsa
+                necessitatibus dicta cum ullam totam a dolorum ducimus, delectus
+                velit nihil optio, ut earum. Ab, neque laudantium! Praesentium
+                incidunt sequi nihil?Lorem ipsum dolor sit, amet consectetur
+                adipisicing elit. Ipsa necessitatibus dicta cum ullam totam a
+                dolorum ducimus, delectus velit nihil optio, ut earum. Ab, neque
+                laudantium! Praesentium incidunt sequi nihil?
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="u-center-text u-margin-top-big">
+          <a href="#" class="btn-text">Discover all tours &rarr;</a>
+        </div>
+      </section>
+
+      <section class="section-book">
+        <div class="row">
+          <div class="book">
+            <div class="book__form">
+              <div class="u-margin-bottom-medium">
+                <h2 class="heading-secondary">現在就訂購!</h2>
+              </div>
+
+              <form action="#" class="form">
+                <div class="form__group">
+                  <input
+                    type="text"
+                    class="form__input"
+                    placeholder="Full Name"
+                    id="name"
+                    required
+                  />
+                  <label for="name" class="form__label">Full Name</label>
+                </div>
+
+                <div class="form__group">
+                  <input
+                    type="email"
+                    class="form__input"
+                    placeholder="Email Address"
+                    id="email"
+                    required
+                  />
+                  <label for="email" class="form__label">Email Address</label>
+                </div>
+
+                <div class="form__group u-margin-bottom-medium">
+                  <div class="form__radio-group">
+                    <input
+                      type="radio"
+                      class="form__radio-input"
+                      id="small"
+                      name="size"
+                    />
+                    <label for="small" class="form__radio-label">
+                      <span class="form__radio-button"></span>
+                      Small tour group
+                    </label>
+                  </div>
+
+                  <div class="form__radio-group">
+                    <input
+                      type="radio"
+                      class="form__radio-input"
+                      id="large"
+                      name="size"
+                    />
+                    <label for="large" class="form__radio-label">
+                      <span class="form__radio-button"></span>
+                      Large tour group
+                    </label>
+                  </div>
+                </div>
+
+                <div class="form__group">
+                  <button class="btn btn--green">Next &rarr;</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="footer__logo-box">
+        <picture class="footer__logo">
+          <source
+            srcset="
+              img/logo-green-small-1x.png 1x,
+              img/logo-green-small-2x.png 2x
+            "
+            media="(max-width:37.5em)"
+          />
+          <!-- 螢幕寬度比37.5em小的時候，使用較小的圖片  -->
+          <img
+            srcset="img/logo-green-1x.png 1x, img/logo-green-2x.png 2x"
+            alt="Full Logo"
+            class="footer__logo"
+            src="img/logo-green-2x.png"
+          /><!-- srcset可以讓瀏覽器自行判斷個別電腦最適合的解析度來放置圖片  -->
+        </picture>
+      </div>
+
+      <div class="row">
+        <div class="col-1-of-2">
+          <div class="footer__navigation">
+            <ul class="footer__list">
+              <li class="footer__item">
+                <a href="#" class="footer__link">Company</a>
+              </li>
+              <li class="footer__item">
+                <a href="#" class="footer__link">Contact us</a>
+              </li>
+              <li class="footer__item">
+                <a href="#" class="footer__link">Career</a>
+              </li>
+              <li class="footer__item">
+                <a href="#" class="footer__link">Privacy policy</a>
+              </li>
+              <li class="footer__item">
+                <a href="#" class="footer__link">Terms</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-1-of-2">
+          <p class="footer__copyright">
+            Built my <a href="#" class="footer__link">Steven Chung</a> for his
+            online course
+            <a href="#" class="footer__link">Advanced CSS and Sass</a>.
+            Copyright &copy; by Jonas Schmedtmann. You are 100% allowed to use
+            this webpage for both personal and commercial use, but NOT to claim
+            it as your own design.
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <div class="popup" id="popup">
+      <div class="popup__content">
+        <div class="popup__left">
+          <img src="img/nat-8.jpg" alt="Tour photo" class="popup__img" />
+          <img src="img/nat-9.jpg" alt="Tour photo" class="popup__img" />
+        </div>
+        <div class="popup__right">
+          <a href="#section-tours" class="popup__close">&times;</a>
+          <h2 class="heading-secondary u-margin-bottom-small">
+            Start booking now
+          </h2>
+          <h3 class="heading-tertiary u-margin-bottom-small">
+            Important &ndash; Please read these terms before booking.
+          </h3>
+          <p class="popup__text">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime
+            dolorem suscipit quam iste animi. Vitae, beatae exercitationem ipsa,
+            laudantium enim odio dicta ipsam hic excepturi inventore in?
+            Excepturi, ipsa architecto. Quisquam quaerat odit similique laborum
+            fuga earum reprehenderit hic ea at dolorem, perspiciatis recusandae
+            facilis velit quia nostrum molestias natus?Lorem ipsum dolor sit
+            amet consectetur adipisicing elit. Officiis excepturi possimus rerum
+            accusamus, error quibusdam praesentium. Nisi quisquam quia itaque
+            voluptas ex beatae eaque. Eligendi nihil quo nisi beatae adipisci
+            commodi laboriosam dolorem iste, voluptates numquam ratione nostrum
+            nemo, laborum ut ipsam quasi repellat vitae necessitatibus itaque.
+            Deserunt, adipisci corrupti!
+          </p>
+          <a href="" class="btn btn--green">Book now</a>
+        </div>
+      </div>
+    </div>
+    <!-- <section class="grid-test">
+      <div class="row">
+        <div class="col-1-of-2">Col 1 of 2</div>
+        <div class="col-1-of-2">Col 1 of 2</div>
+      </div>
+
+      <div class="row">
+        <div class="col-1-of-3">Col 1 of 3</div>
+        <div class="col-1-of-3">Col 1 of 3</div>
+        <div class="col-1-of-3">Col 1 of 3</div>
+      </div>
+
+      <div class="row">
+        <div class="col-1-of-3">Col 1 of 3</div>
+        <div class="col-2-of-3">Col 2 of 3</div>
+      </div>
+
+      <div class="row">
+        <div class="col-1-of-4">Col 1 of 4</div>
+        <div class="col-1-of-4">Col 1 of 4</div>
+        <div class="col-1-of-4">Col 1 of 4</div>
+        <div class="col-1-of-4">Col 1 of 4</div>
+      </div>
+
+      <div class="row">
+        <div class="col-1-of-4">Col 1 of 4</div>
+        <div class="col-1-of-4">Col 1 of 4</div>
+        <div class="col-2-of-4">Col 2 of 4</div>
+      </div>
+
+      <div class="row">
+        <div class="col-1-of-4">Col 1 of 4</div>
+        <div class="col-3-of-4">Col 3 of 4</div>
+      </div>
+    </section> -->
+  </body>
+</html>
